@@ -54,7 +54,7 @@ a {
         @include flex-conteiner(420px, 300px, space-between, flex-start);
         border-radius: 6px;
         flex-direction: column;
-        background-image: url("Img's/main animate gif.gif");
+        background-image: url("Img's/Main%20animate%20gif.gif");
         background-repeat: round;
         .Mainpage-header {
             @include flex-conteiner(100%, 32px, flex-end, center);
@@ -310,7 +310,7 @@ a {
                         color: royalblue;
                     }
                     .fab.fa-sass {
-                        color: #15aabf;
+                        color: #c76494;
                     }
                     .fab.fa-js {
                         color: yellow;
@@ -330,14 +330,17 @@ a {
                     .fab.fa-vuejs {
                         color: seagreen;
                     }
-                    .fas.fa-server {
-                        color: red;
+                    .fas.fa-atom {
+                        color:aqua;
                     }
                     .fas.fa-database {
                         color: green;
                     }
-                    .csharp-icon {
-                        color: #a0a;
+                    .fas.fa-code-branch {
+                        color: #e84d31;
+                    }
+                    .electronjs{
+                        color: aqua;
                         font-weight: bold;
                     }
                 }

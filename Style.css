@@ -88,7 +88,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url("Img's/main animate gif.gif");
+  background-image: url("Img's/Main%20animate%20gif.gif");
   background-repeat: round;
 }
 
@@ -692,7 +692,7 @@ a {
 }
 
 .page-container .Skills-page .Skills-main .Skill .Skill-icon .fab.fa-sass {
-  color: #15aabf;
+  color: #c76494;
 }
 
 .page-container .Skills-page .Skills-main .Skill .Skill-icon .fab.fa-js {
@@ -719,16 +719,20 @@ a {
   color: seagreen;
 }
 
-.page-container .Skills-page .Skills-main .Skill .Skill-icon .fas.fa-server {
-  color: red;
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fas.fa-atom {
+  color: aqua;
 }
 
 .page-container .Skills-page .Skills-main .Skill .Skill-icon .fas.fa-database {
   color: green;
 }
 
-.page-container .Skills-page .Skills-main .Skill .Skill-icon .csharp-icon {
-  color: #a0a;
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fas.fa-code-branch {
+  color: #e84d31;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .electronjs {
+  color: aqua;
   font-weight: bold;
 }
 
