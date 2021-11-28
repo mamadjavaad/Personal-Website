@@ -54,7 +54,7 @@ a {
         @include flex-conteiner(420px, 300px, space-between, flex-start);
         border-radius: 6px;
         flex-direction: column;
-        background-image: url("Img's/main animate gif.gif");
+        background-image: url("Img's/Main%20animate%20gif.gif");
         background-repeat: round;
         .Mainpage-header {
             @include flex-conteiner(100%, 32px, flex-end, center);
