@@ -1,0 +1,564 @@
+@mixin flex-conteiner($width, $height, $justifay, $align) {
+    display: flex;
+    width: $width;
+    height: $height;
+    justify-content: $justifay;
+    align-items: $align;
+}
+@font-face {
+    font-family: "IranYekan";
+    src: url("webfonts/IRANYekanRegularFaNum.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: "IranYekan", sans-serif, Arial, Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans",
+        "Helvetica Neue";
+    scrollbar-color: #131724 #232733;
+    scrollbar-width: thin;
+}
+a {
+    text-decoration: none;
+}
+.page-container {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    background-image: url("Img's/Wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .home-bar {
+        @include flex-conteiner(50px, 40px, center, center);
+        background: #24222d;
+        color: white;
+        border-radius: 6px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        transition: all 1s;
+        &:hover {
+            height: 50px;
+        }
+    }
+    .home-selected {
+        height: 50px !important;
+    }
+    .Main-page {
+        @include flex-conteiner(420px, 300px, space-between, flex-start);
+        border-radius: 6px;
+        flex-direction: column;
+        background-image: url("Img's/main animate gif.gif");
+        background-repeat: round;
+        .Mainpage-header {
+            @include flex-conteiner(100%, 32px, flex-end, center);
+            background: #24222d;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            .titlebar-ryg {
+                @include flex-conteiner(25%, 32px, space-around, center);
+                margin-left: 1%;
+                .titlebar-btn {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                }
+                .red-btn {
+                    background: red;
+                }
+                .yellow-btn {
+                    background: yellow;
+                }
+                .green-btn {
+                    background: green;
+                }
+            }
+            .Mainpage-name {
+                @include flex-conteiner(49%, 32px, center, center);
+                font-size: 14px;
+                // font-weight: bold;
+                color: white;
+                p {
+                    color: #ffffffc4;
+                    margin-left: 1%;
+                }
+            }
+        }
+        .welcome-text-container {
+            @include flex-conteiner(100%, 53px, center, center);
+            flex-direction: column;
+            margin-bottom: 16px;
+            transition: all 2s;
+            &:hover {
+                letter-spacing: 2px;
+            }
+            .main-text {
+                font-weight: bold;
+                color: #fff;
+            }
+            .sec-text {
+                font-size: 14px;
+                color: #ffffffc4;
+                text-align: center;
+            }
+        }
+    }
+    .aboutMe-page {
+        @include flex-conteiner(60%, 450px, flex-start, flex-start);
+        border-radius: 6px;
+        flex-direction: column;
+        .aboutMe-header {
+            @include flex-conteiner(100%, 32px, flex-end, center);
+            background: #272d3b;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            .titlebar-ryg {
+                @include flex-conteiner(10%, 32px, space-around, center);
+                margin-left: 1%;
+                .titlebar-btn {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                }
+                .red-btn {
+                    background: red;
+                }
+                .yellow-btn {
+                    background: yellow;
+                }
+                .green-btn {
+                    background: green;
+                }
+            }
+            .aboutMe-name {
+                @include flex-conteiner(80%, 32px, center, center);
+                font-size: 14px;
+                // font-weight: bold;
+                .fas.fa-folder-open {
+                    color: #70abc9;
+                }
+                p {
+                    color: #ffffffc4;
+                    margin-left: 1%;
+                }
+            }
+        }
+        .aboutMe-main {
+            @include flex-conteiner(100%, 418px, flex-end, flex-start);
+            background: #232733;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            .aboutMe-info {
+                @include flex-conteiner(40%, 418px, flex-start, flex-start);
+                flex-direction: column;
+                .aboutMe-info-top {
+                    @include flex-conteiner(100%, 150px, center, center);
+                    .aboutMe-info-top-container {
+                        @include flex-conteiner(84%, 62px, flex-start, flex-start);
+                        .info-texts-container {
+                            @include flex-conteiner(66%, 58px, center, center);
+                            p {
+                                // font-weight: bold;
+                                font-size: 12px;
+                            }
+                            .MyName {
+                                color: white;
+                            }
+                            .SomeSkills {
+                                color: #c0c3ca;
+                            }
+
+                            flex-direction: column;
+                        }
+                        .info-img-container {
+                            width: 34%;
+                            .fa.fa-id-card {
+                                font-size: 44px;
+                                color: white;
+                                transition: all 1s;
+                                &:hover {
+                                    opacity: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .aboutMe-info-bio {
+                    @include flex-conteiner(100%, 269px, flex-start, center);
+                    border-top: 1px solid #ffffff2b;
+                    flex-direction: column;
+                    .bio-text-container {
+                        @include flex-conteiner(92%, 173px, center, center);
+                        p {
+                            // font-weight: bold;
+                            font-size: 12px;
+                            color: #c0c3ca;
+                        }
+                    }
+                    .sign-container {
+                        width: 58%;
+                        transition: all 1s;
+                        img {
+                            width: 100%;
+                        }
+                        &:hover {
+                            opacity: 50%;
+                        }
+                    }
+                }
+            }
+            .aboutMe-contact {
+                @include flex-conteiner(60%, 418px, center, center);
+                flex-direction: column;
+                border-right: 1px solid #ffffff2b;
+                .myphoto-container {
+                    @include flex-conteiner(100%, 300px, center, center);
+                    img {
+                        width: 37%;
+                        min-width: 129px;
+                        border-radius: 10px;
+                        transition: all 0.5s;
+                        transition: all 1s;
+                        &:hover {
+                            opacity: 50%;
+                        }
+                    }
+                }
+                .contactMe {
+                    @include flex-conteiner(100%, 40px, center, center);
+                    .contactMe-items {
+                        @include flex-conteiner(48%, 40px, space-evenly, center);
+                        a {
+                            font-size: 22px;
+                            color: #fff;
+                            transition: all 1s;
+                            &:hover {
+                                color: #c0c3cab8 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Skills-page {
+        @include flex-conteiner(60%, auto, flex-start, flex-start);
+        border-radius: 6px;
+        flex-direction: column;
+        .Skills-header {
+            @include flex-conteiner(100%, 32px, flex-end, center);
+            background: #272d3b;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            .titlebar-ryg {
+                @include flex-conteiner(10%, 32px, space-around, center);
+                margin-left: 1%;
+                .titlebar-btn {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                }
+                .red-btn {
+                    background: red;
+                }
+                .yellow-btn {
+                    background: yellow;
+                }
+                .green-btn {
+                    background: green;
+                }
+            }
+            .Skills-name {
+                @include flex-conteiner(80%, 32px, center, center);
+                font-size: 14px;
+                // font-weight: bold;
+                .fas.fa-folder-open {
+                    color: #70abc9;
+                }
+                p {
+                    color: #ffffffc4;
+                    margin-left: 1%;
+                }
+            }
+        }
+        .Skills-main {
+            @include flex-conteiner(100%, auto, center, center);
+            background: #232733;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            flex-wrap: wrap;
+            .Skill {
+                @include flex-conteiner(50%, 53px, flex-end, center);
+                transition: all 1.5s;
+                &:hover {
+                    letter-spacing: 3px;
+                    background-color: #131724;
+                }
+                .Skill-icon {
+                    @include flex-conteiner(23%, 50px, center, center);
+                    font-size: 23px;
+                    .fab.fa-html5 {
+                        color: orange;
+                    }
+                    .fab.fa-css3 {
+                        color: royalblue;
+                    }
+                    .fab.fa-sass {
+                        color: #15aabf;
+                    }
+                    .fab.fa-js {
+                        color: yellow;
+                    }
+                    .fas.fa-bold {
+                        color: purple;
+                    }
+                    .fab.fa-buromobelexperte {
+                        color: salmon;
+                    }
+                    .fal.fa-th {
+                        color: darkseagreen;
+                    }
+                    .fas.fa-bolt {
+                        color: pink;
+                    }
+                    .fab.fa-vuejs {
+                        color: seagreen;
+                    }
+                    .fas.fa-server {
+                        color: red;
+                    }
+                    .fas.fa-database {
+                        color: green;
+                    }
+                    .csharp-icon {
+                        color: #a0a;
+                        font-weight: bold;
+                    }
+                }
+                .Skill-about {
+                    @include flex-conteiner(67%, 50px, center, center);
+                    flex-direction: column;
+                    order: -1;
+                    .Skill-name {
+                        color: white;
+                    }
+                    .Skill-info {
+                        color: #c0c3ca;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .Portofilo-page {
+        @include flex-conteiner(60%, 500px, flex-start, flex-start);
+        border-radius: 6px;
+        flex-direction: column;
+        .Portofilo-header {
+            @include flex-conteiner(100%, 32px, flex-end, center);
+            background: #272d3b;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            .titlebar-ryg {
+                @include flex-conteiner(10%, 32px, space-around, center);
+                margin-left: 1%;
+                .titlebar-btn {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                }
+                .red-btn {
+                    background: red;
+                }
+                .yellow-btn {
+                    background: yellow;
+                }
+                .green-btn {
+                    background: green;
+                }
+            }
+            .Portofilo-name {
+                @include flex-conteiner(80%, 32px, center, center);
+                font-size: 14px;
+                // font-weight: bold;
+                .fas.fa-folder-open {
+                    color: #70abc9;
+                }
+                p {
+                    color: #ffffffc4;
+                    margin-left: 1%;
+                }
+            }
+        }
+        .Portofilo-main {
+            @include flex-conteiner(100%, 500px, space-around, center);
+            flex-wrap: wrap;
+            background: #232733;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            overflow: auto;
+            .sample-container {
+                @include flex-conteiner(40%, auto, start, center);
+                min-width: 360px;
+                flex-direction: column;
+                margin: 20px;
+                .sample-box {
+                    @include flex-conteiner(100%, 257px, center, center);
+                    border-radius: 15px;
+                    min-width: 260px;
+                    border: 6px solid #ffffff5e;
+                }
+                a {
+                    margin-top: 20px;
+                    border: 1px solid #2d94c9;
+                    color: white;
+                    padding: 13px 17px;
+                    border-radius: 8px;
+                    transition: all 0.5s;
+                    &:hover {
+                        background: #afdef763;
+                    }
+                }
+            }
+        }
+    }
+    .menuBar {
+        @include flex-conteiner(270px, 30px, space-evenly, center);
+        background: #24222d;
+        border-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+        a {
+            @include flex-conteiner(73px, 30px, center, center);
+            color: white;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 1s;
+            &:hover:not(.selected) {
+                color: #c0c3cab8 !important;
+            }
+        }
+        .selected {
+            border-bottom: 2px solid white;
+        }
+    }
+}
+@media only screen and (max-width: 470px) {
+    .Main-page {
+        width: 90% !important;
+        height: 250px !important;
+    }
+    .aboutMe-page {
+        width: 73% !important;
+        height: 577px !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .titlebar-ryg {
+        width: 24% !important;
+    }
+    .aboutMe-name {
+        width: 56% !important;
+    }
+    .aboutMe-main {
+        height: 586px !important;
+        flex-direction: column !important;
+    }
+    .aboutMe-contact {
+        width: 100% !important;
+        height: 252px !important;
+        order: -1;
+        border-right: 0px !important;
+        border-bottom: 1px solid #ffffff2b;
+    }
+    .aboutMe-info {
+        width: 100% !important;
+        height: 286px !important;
+    }
+    .aboutMe-info-top {
+        height: 84px !important;
+    }
+    .aboutMe-info-top-container {
+        width: 89% !important;
+    }
+    .aboutMe-info-bio {
+        height: 202px !important;
+    }
+    .bio-text-container {
+        width: 88% !important;
+        height: 111px !important;
+    }
+    .Skill {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    .Skills-page,
+    .Portofilo-page {
+        width: 90% !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .aboutMe-name,
+    .Portofilo-name {
+        width: 56% !important;
+    }
+    .titlebar-ryg {
+        width: 24% !important;
+    }
+    .sample-container {
+        min-width: 250px !important;
+        .sample-box {
+            height: 185px !important;
+        }
+    }
+    .sign-container {
+        width: 38% !important;
+    }
+}
+@media only screen and (min-width: 471px) and (max-width: 900px) {
+    .Mainpage-name {
+        width: 61% !important;
+    }
+    .aboutMe-page {
+        width: 80% !important;
+        height: 450px !important;
+    }
+    .aboutMe-name {
+        width: 71% !important;
+    }
+    .titlebar-ryg {
+        width: 18% !important;
+    }
+    .Portofilo-page,
+    .Skills-page {
+        width: 90% !important;
+    }
+    .Portofilo-name,
+    .Skills-name {
+        width: 61% !important;
+    }
+    .Portofilo-name {
+        width: 61% !important;
+    }
+}
+/* Scroll  */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #232733;
+    border-radius: 16px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #131724;
+    border-radius: 16px;
+}

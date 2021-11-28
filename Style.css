@@ -1,0 +1,1094 @@
+@font-face {
+  font-family: "IranYekan";
+  src: url("webfonts/IRANYekanRegularFaNum.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  direction: rtl;
+  font-family: "IranYekan", sans-serif, Arial, Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue";
+  scrollbar-color: #131724 #232733;
+  scrollbar-width: thin;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background-image: url("Img's/Wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-container .home-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #24222d;
+  color: white;
+  border-radius: 6px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.page-container .home-bar:hover {
+  height: 50px;
+}
+
+.page-container .home-selected {
+  height: 50px !important;
+}
+
+.page-container .Main-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 420px;
+  height: 300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("Img's/main animate gif.gif");
+  background-repeat: round;
+}
+
+.page-container .Main-page .Mainpage-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 32px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #24222d;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.page-container .Main-page .Mainpage-header .titlebar-ryg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  height: 32px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1%;
+}
+
+.page-container .Main-page .Mainpage-header .titlebar-ryg .titlebar-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.page-container .Main-page .Mainpage-header .titlebar-ryg .red-btn {
+  background: red;
+}
+
+.page-container .Main-page .Mainpage-header .titlebar-ryg .yellow-btn {
+  background: yellow;
+}
+
+.page-container .Main-page .Mainpage-header .titlebar-ryg .green-btn {
+  background: green;
+}
+
+.page-container .Main-page .Mainpage-header .Mainpage-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 49%;
+  height: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: white;
+}
+
+.page-container .Main-page .Mainpage-header .Mainpage-name p {
+  color: #ffffffc4;
+  margin-left: 1%;
+}
+
+.page-container .Main-page .welcome-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 53px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 16px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.page-container .Main-page .welcome-text-container:hover {
+  letter-spacing: 2px;
+}
+
+.page-container .Main-page .welcome-text-container .main-text {
+  font-weight: bold;
+  color: #fff;
+}
+
+.page-container .Main-page .welcome-text-container .sec-text {
+  font-size: 14px;
+  color: #ffffffc4;
+  text-align: center;
+}
+
+.page-container .aboutMe-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  height: 450px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-container .aboutMe-page .aboutMe-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 32px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #272d3b;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.page-container .aboutMe-page .aboutMe-header .titlebar-ryg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  height: 32px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1%;
+}
+
+.page-container .aboutMe-page .aboutMe-header .titlebar-ryg .titlebar-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.page-container .aboutMe-page .aboutMe-header .titlebar-ryg .red-btn {
+  background: red;
+}
+
+.page-container .aboutMe-page .aboutMe-header .titlebar-ryg .yellow-btn {
+  background: yellow;
+}
+
+.page-container .aboutMe-page .aboutMe-header .titlebar-ryg .green-btn {
+  background: green;
+}
+
+.page-container .aboutMe-page .aboutMe-header .aboutMe-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.page-container .aboutMe-page .aboutMe-header .aboutMe-name .fas.fa-folder-open {
+  color: #70abc9;
+}
+
+.page-container .aboutMe-page .aboutMe-header .aboutMe-name p {
+  color: #ffffffc4;
+  margin-left: 1%;
+}
+
+.page-container .aboutMe-page .aboutMe-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 418px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background: #232733;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  height: 418px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-top .aboutMe-info-top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 84%;
+  height: 62px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-top .aboutMe-info-top-container .info-texts-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 66%;
+  height: 58px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-top .aboutMe-info-top-container .info-texts-container p {
+  font-size: 12px;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-top .aboutMe-info-top-container .info-texts-container .MyName {
+  color: white;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-top .aboutMe-info-top-container .info-texts-container .SomeSkills {
+  color: #c0c3ca;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-top .aboutMe-info-top-container .info-img-container {
+  width: 34%;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-top .aboutMe-info-top-container .info-img-container .fa.fa-id-card {
+  font-size: 44px;
+  color: white;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-top .aboutMe-info-top-container .info-img-container .fa.fa-id-card:hover {
+  opacity: 50%;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-bio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 269px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #ffffff2b;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-bio .bio-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 92%;
+  height: 173px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-bio .bio-text-container p {
+  font-size: 12px;
+  color: #c0c3ca;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-bio .sign-container {
+  width: 58%;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-bio .sign-container img {
+  width: 100%;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-info .aboutMe-info-bio .sign-container:hover {
+  opacity: 50%;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  height: 418px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-right: 1px solid #ffffff2b;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-contact .myphoto-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-contact .myphoto-container img {
+  width: 37%;
+  min-width: 129px;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-contact .myphoto-container img:hover {
+  opacity: 50%;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-contact .contactMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-contact .contactMe .contactMe-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48%;
+  height: 40px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-contact .contactMe .contactMe-items a {
+  font-size: 22px;
+  color: #fff;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.page-container .aboutMe-page .aboutMe-main .aboutMe-contact .contactMe .contactMe-items a:hover {
+  color: #c0c3cab8 !important;
+}
+
+.page-container .Skills-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  height: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-container .Skills-page .Skills-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 32px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #272d3b;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.page-container .Skills-page .Skills-header .titlebar-ryg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  height: 32px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1%;
+}
+
+.page-container .Skills-page .Skills-header .titlebar-ryg .titlebar-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.page-container .Skills-page .Skills-header .titlebar-ryg .red-btn {
+  background: red;
+}
+
+.page-container .Skills-page .Skills-header .titlebar-ryg .yellow-btn {
+  background: yellow;
+}
+
+.page-container .Skills-page .Skills-header .titlebar-ryg .green-btn {
+  background: green;
+}
+
+.page-container .Skills-page .Skills-header .Skills-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.page-container .Skills-page .Skills-header .Skills-name .fas.fa-folder-open {
+  color: #70abc9;
+}
+
+.page-container .Skills-page .Skills-header .Skills-name p {
+  color: #ffffffc4;
+  margin-left: 1%;
+}
+
+.page-container .Skills-page .Skills-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #232733;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page-container .Skills-page .Skills-main .Skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 53px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.page-container .Skills-page .Skills-main .Skill:hover {
+  letter-spacing: 3px;
+  background-color: #131724;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 23%;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 23px;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fab.fa-html5 {
+  color: orange;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fab.fa-css3 {
+  color: royalblue;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fab.fa-sass {
+  color: #15aabf;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fab.fa-js {
+  color: yellow;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fas.fa-bold {
+  color: purple;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fab.fa-buromobelexperte {
+  color: salmon;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fal.fa-th {
+  color: darkseagreen;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fas.fa-bolt {
+  color: pink;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fab.fa-vuejs {
+  color: seagreen;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fas.fa-server {
+  color: red;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .fas.fa-database {
+  color: green;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-icon .csharp-icon {
+  color: #a0a;
+  font-weight: bold;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 67%;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-about .Skill-name {
+  color: white;
+}
+
+.page-container .Skills-page .Skills-main .Skill .Skill-about .Skill-info {
+  color: #c0c3ca;
+  font-size: 14px;
+}
+
+.page-container .Portofilo-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  height: 500px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 6px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-container .Portofilo-page .Portofilo-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 32px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #272d3b;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.page-container .Portofilo-page .Portofilo-header .titlebar-ryg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  height: 32px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1%;
+}
+
+.page-container .Portofilo-page .Portofilo-header .titlebar-ryg .titlebar-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.page-container .Portofilo-page .Portofilo-header .titlebar-ryg .red-btn {
+  background: red;
+}
+
+.page-container .Portofilo-page .Portofilo-header .titlebar-ryg .yellow-btn {
+  background: yellow;
+}
+
+.page-container .Portofilo-page .Portofilo-header .titlebar-ryg .green-btn {
+  background: green;
+}
+
+.page-container .Portofilo-page .Portofilo-header .Portofilo-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.page-container .Portofilo-page .Portofilo-header .Portofilo-name .fas.fa-folder-open {
+  color: #70abc9;
+}
+
+.page-container .Portofilo-page .Portofilo-header .Portofilo-name p {
+  color: #ffffffc4;
+  margin-left: 1%;
+}
+
+.page-container .Portofilo-page .Portofilo-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 500px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #232733;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  overflow: auto;
+}
+
+.page-container .Portofilo-page .Portofilo-main .sample-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  height: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 360px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+.page-container .Portofilo-page .Portofilo-main .sample-container .sample-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 257px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  min-width: 260px;
+  border: 6px solid #ffffff5e;
+}
+
+.page-container .Portofilo-page .Portofilo-main .sample-container a {
+  margin-top: 20px;
+  border: 1px solid #2d94c9;
+  color: white;
+  padding: 13px 17px;
+  border-radius: 8px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.page-container .Portofilo-page .Portofilo-main .sample-container a:hover {
+  background: #afdef763;
+}
+
+.page-container .menuBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 270px;
+  height: 30px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #24222d;
+  border-radius: 5px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.page-container .menuBar a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 73px;
+  height: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.page-container .menuBar a:hover:not(.selected) {
+  color: #c0c3cab8 !important;
+}
+
+.page-container .menuBar .selected {
+  border-bottom: 2px solid white;
+}
+
+@media only screen and (max-width: 470px) {
+  .Main-page {
+    width: 90% !important;
+    height: 250px !important;
+  }
+  .aboutMe-page {
+    width: 73% !important;
+    height: 577px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .titlebar-ryg {
+    width: 24% !important;
+  }
+  .aboutMe-name {
+    width: 56% !important;
+  }
+  .aboutMe-main {
+    height: 586px !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .aboutMe-contact {
+    width: 100% !important;
+    height: 252px !important;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    border-right: 0px !important;
+    border-bottom: 1px solid #ffffff2b;
+  }
+  .aboutMe-info {
+    width: 100% !important;
+    height: 286px !important;
+  }
+  .aboutMe-info-top {
+    height: 84px !important;
+  }
+  .aboutMe-info-top-container {
+    width: 89% !important;
+  }
+  .aboutMe-info-bio {
+    height: 202px !important;
+  }
+  .bio-text-container {
+    width: 88% !important;
+    height: 111px !important;
+  }
+  .Skill {
+    width: 100% !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .Skills-page,
+  .Portofilo-page {
+    width: 90% !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .aboutMe-name,
+  .Portofilo-name {
+    width: 56% !important;
+  }
+  .titlebar-ryg {
+    width: 24% !important;
+  }
+  .sample-container {
+    min-width: 250px !important;
+  }
+  .sample-container .sample-box {
+    height: 185px !important;
+  }
+  .sign-container {
+    width: 38% !important;
+  }
+}
+
+@media only screen and (min-width: 471px) and (max-width: 900px) {
+  .Mainpage-name {
+    width: 61% !important;
+  }
+  .aboutMe-page {
+    width: 80% !important;
+    height: 450px !important;
+  }
+  .aboutMe-name {
+    width: 71% !important;
+  }
+  .titlebar-ryg {
+    width: 18% !important;
+  }
+  .Portofilo-page,
+  .Skills-page {
+    width: 90% !important;
+  }
+  .Portofilo-name,
+  .Skills-name {
+    width: 61% !important;
+  }
+  .Portofilo-name {
+    width: 61% !important;
+  }
+}
+
+/* Scroll  */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #232733;
+  border-radius: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #131724;
+  border-radius: 16px;
+}
+/*# sourceMappingURL=style.css.map */
